@@ -1,26 +1,53 @@
-# Ex-04
-# DEMONSTRATION OF INTRUSION DETECTION SYSTEM(IDS) 
-# DATE : 25/04/24
-# AIM: 
-         To demonstrate Intrusion Detection System (IDS) using Snort software tool. 
+## Ex-
+## DEMONSTRATION OF INTRUSION DETECTION SYSTEM(IDS) 
+## DATE:
+
+## AIM:
+
+     To demonstrate Intrusion Detection System (IDS) using Snort software tool. 
+        
  
+## STEPS ON CONFIGURING AND INTRUSION DETECTION: 
  
-# STEPS ON CONFIGURING AND INTRUSION DETECTION: 
- 
-1. Download Snort from the Snort.org website. (http://www.snort.org/snort-downloads) 
-2. Download Rules(https://www.snort.org/snort-rules). You must register to get the rules. 
+Step 1.
+
+Download Snort from the Snort.org website. (http://www.snort.org/snort-downloads) 
+
+Step 2. 
+
+Download Rules(https://www.snort.org/snort-rules). You must register to get the rules. 
 (You should download these often) 
-3. Double click on the .exe to install snort.  This will install snort in the “C:\Snort” folder.It is 
+
+Step 3.
+
+Double click on the .exe to install snort.  This will install snort in the “C:\Snort” folder.It is 
 important to have WinPcap (https://www.winpcap.org/install/) installed 
-4. Extract the Rules file. You will need WinRAR for the .gz file. 
-5. Copy all files from the “rules” folder of the extracted folder.  Now paste the rules into 
+
+Step 4.
+
+Extract the Rules file. You will need WinRAR for the .gz file.
+
+Step 5.
+
+Copy all files from the “rules” folder of the extracted folder.  Now paste the rules into 
 “C:\Snort\rules” folder. 
-6. Copy “snort.conf” file from the “etc” folder of the extracted folder.  You must paste it into 
+
+Step 6.
+
+Copy “snort.conf” file from the “etc” folder of the extracted folder.  You must paste it into 
 “C:\Snort\etc” folder. Overwrite any      existing file.  Remember if you modify your 
 snort.conf file and download a new file, you must modify it for Snort to work. 
-7. Open a command prompt (cmd.exe) and navigate to folder “C:\Snort\bin” folder. ( at the 
+
+Step 7.
+
+
+Open a command prompt (cmd.exe) and navigate to folder “C:\Snort\bin” folder. ( at the 
 Prompt, type cd\snort\bin) 
-8. To start (execute) snort in sniffer mode use following command: 
+
+Step 8.
+
+
+To start (execute) snort in sniffer mode use following command: 
 snort -dev -i 3 -i indicates the interface number.  You must pick the correct interface number.  In my case, it 
 is 3. 
  -dev is used to run snort to capture packets on your network. 
@@ -28,23 +55,33 @@ is 3.
 To check the interface list,  use following command: 
  snort   -W 
  
+ 
  ![image](https://github.com/IsaacAIML2023/Ex-04_CNS/assets/158465339/83d7de69-ebad-45e4-a444-3b5fdce21db9)
 
 
-# Finding an interface 
+## Finding an interface 
  
 You can tell which interface to use by looking at the Index number and finding Microsoft.  
 As you can see in the above example, the other interfaces are for VMWare.  My interface is 
 3. 
-9. To run snort in IDS mode, you will need to configure the file “snort.conf” according to 
-your network environment. 
-10. To specify the network address that you want to protect in snort.conf file, look for the 
+
+Step 9.
+
+To run snort in IDS mode, you will need to configure the file “snort.conf” according to 
+your network environment.
+
+Step 10.
+
+To specify the network address that you want to protect in snort.conf file, look for the 
 following line. 
 var HOME_NET 192.168.1.0/24  (You will normally see any here) 
-11. You may also want to set the addresses of DNS_SERVERS, if you have some on your 
+
+Step 11. 
+
+You may also want to set the addresses of DNS_SERVERS, if you have some on your 
 network. 
  
-Example: 
+### Example: 
 example snort 
 12. Change the RULE_PATH variable to the path of rules folder. 
  var RULE_PATH c:\snort\rules 
@@ -115,12 +152,13 @@ Snort monitoring traffic –
 
 
 
-  # EXPLORING N-STALKER, A VULNERABILITY ASSESSMENT TOOL 
+## EXPLORING N-STALKER, A VULNERABILITY ASSESSMENT TOOL 
   
- # AIM: 
+## AIM: 
+
  To download the N-Stalker Vulnerability Assessment Tool and exploring the features. 
  
-# EXPLORING N-STALKER: 
+## EXPLORING N-STALKER: 
  N-Stalker Web Application Security Scanner is a Web security assessment tool. 
  It incorporates with a well-known N-Stealth HTTP Security Scanner and 35,000 Web 
 attack signature database. 
@@ -129,13 +167,30 @@ attack signature database.
  Once update, you will note the status as up to date. 
  You need to download and install N-Stalker from www.nstalker.com. 
  
-1. Start N-Stalker from a Windows computer. The program is installed under Start ➪ 
+Step 1.
+
+Start N-Stalker from a Windows computer. The program is installed under Start ➪ 
 Programs ➪ N-Stalker ➪ N-Stalker Free Edition.  
-2. Enter a host address or a range of addresses to scan. 
-3. Click Start Scan. 
-4. After the scan completes, the N-Stalker Report Manager will prompt 
-5. you to select a format for the resulting report as choose Generate HTML. 
-6. Review the HTML report for vulnerabilities. 
+
+Step 2.
+
+Enter a host address or a range of addresses to scan. 
+
+Step 3.
+
+Click Start Scan. 
+
+Step 4.
+
+After the scan completes, the N-Stalker Report Manager will prompt 
+
+Step 5.
+
+you to select a format for the resulting report as choose Generate HTML. 
+
+Step 6.
+
+Review the HTML report for vulnerabilities. 
  
  ![image](https://github.com/IsaacAIML2023/Ex-04_CNS/assets/158465339/f83917c1-ed89-4125-a6fa-a060fe755cb2)
 
@@ -171,6 +226,6 @@ the particular vulnerability?
  ![image](https://github.com/IsaacAIML2023/Ex-04_CNS/assets/158465339/7bff201b-2d00-43aa-9bc0-fa7681ade360)
 
  
-# RESULT:
+## RESULT:
   Thus the N-Stalker Vulnerability Assessment Tool was downloaded and  the features were explored successfully. 
 
