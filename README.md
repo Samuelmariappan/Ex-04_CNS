@@ -143,7 +143,7 @@ Snort monitoring traffic –
  ![image](https://github.com/IsaacAIML2023/Ex-04_CNS/assets/158465339/95bdedbe-90ce-41d1-a19f-c50ba02394c1)
 
  
-# RESULT: 
+## RESULT: 
   Thus  demonstration of Intrusion Detection System (IDS) using Snort software tool was implemented successfully. 
 
 
